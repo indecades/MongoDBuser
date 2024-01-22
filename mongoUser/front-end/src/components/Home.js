@@ -56,6 +56,7 @@ export const Home = () => {
       <form onSubmit={createNewUser}>
         <h1>User Form</h1>
         <input
+  pattern="[A-Za-z]+"
           value={name}
           required
           onChange={(e) => setName(e.target.value)}
@@ -63,6 +64,7 @@ export const Home = () => {
         />
         <br />
         <input
+  pattern="[A-Za-z]+"
           value={surname}
           required
           onChange={(e) => setSurname(e.target.value)}
